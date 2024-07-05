@@ -1,0 +1,366 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fef7f1;
+
+
+}
+
+
+.divPath {
+    color: #8B0000;
+    clip-path: polygon(0 15%, 0 0, 96% 0);
+    width: 100px;
+}
+
+/* generales */
+
+.goto-top {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    width: 75px;
+    height: 50px;
+}
+
+.divisor {
+    width: 600px;
+}
+
+
+.fondoColor {
+    background-color: #fdf8ec;
+}
+
+.fondoColor2 {
+    background-color: #ad5f23;
+}
+
+.titulos {
+    font-size: 30px;
+    color: #8B0000;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+.banner1 {
+    background-image: url("/imagenes/boda.jpeg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    background-position: center;
+    height: 100vh;
+    background-blend-mode: screen;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    height: 100vh;
+    /* Altura de la sección de la pantalla completa */
+    background-attachment: fixed;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+@keyframes showTopText {
+    0% {
+        transform: translate3d(0, 100%, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(0, 50%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes showBottomText {
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animated-title {
+    color: #fff;
+    font-family: Roboto, Arial, sans-serif;
+    height: 90vmin;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+}
+
+.animated-title>div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.animated-title>div div {
+    font-size: 12vmin;
+    padding: 2vmin 0;
+    position: absolute;
+}
+
+.animated-title>div div span {
+    display: block;
+}
+
+.animated-title>div.text-top {
+    border-bottom: 1vmin solid #d5c2a2;
+    top: 0;
+}
+
+.animated-title>div.text-top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+}
+
+.animated-title>div.text-top div span:first-child {
+    color: #fff;
+}
+
+.animated-title>div.text-bottom {
+    bottom: 0;
+}
+
+.animated-title>div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+}
+
+
+
+
+/* seccion1 */
+
+.animacion2 {
+    width: 100%;
+
+}
+
+.anillo {
+    width: 200px;
+}
+
+/* seccion2 */
+
+.banner2 {
+    background-image: url("/imagenes/aa.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Fondo claro con transparencia */
+    background-blend-mode: screen;
+    /* Opcional: ajusta según el efecto deseado */
+    background-repeat: no-repeat;
+    padding-top: 0;
+    color: #333;
+    /* Color de texto para asegurar legibilidad */
+}
+
+
+/* seccion 3 */
+i {
+    color: #d5c2a2;
+    font-size: 90px;
+
+}
+
+
+/* seccion sub */
+
+.emailInput {
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/* .page-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+} */
+
+
+.intro {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .intro .intro-img {
+        width: 75%;
+        float: right;
+    }
+
+    .intro .intro-text {
+        left: 0;
+        width: 60%;
+        margin-top: 3rem;
+        position: absolute;
+    }
+
+    .intro .intro-text .intro-button {
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: -2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .intro .intro-text {
+        width: 45%;
+    }
+}
+
+
+.section-heading {
+    text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.section-heading .section-heading-lower {
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.bg-faded {
+    background-color: #f6e1c5;
+}
+
+.text-faded {
+    color: #f6e1c5;
+}
+
+
+
+
+
+
+.projects-section .featured-text {
+    padding: 2rem;
+}
+
+.projects-section .featured-text {
+    padding: 2rem;
+}
+
+.projects-section .project-text {
+    padding: 3rem;
+    font-size: 90%;
+}
+
+@media (min-width: 992px) {
+    .projects-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #f5d87f;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .projects-section .project-text {
+        padding: 5rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .projects-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #f6e1c5;
+    }
+}
+
+
+.ult {
+    background-color: #f6e1c5;
+}
+
+/* seccion matricula */
+
+.fon {
+    background-image: url("/imagenes/campus.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Añadimos una capa blanca semitransparente */
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: screen;
+    /* Utilizamos screen para aclarar */
+    /* 
+    Nota: Solo necesitas un valor para background-blend-mode,
+    en este caso screen. La propiedad multiply no es necesaria.
+    */
+}
+
+.button-74 {
+    background-color: #fbeee0;
+    border: 2px solid #8B0000;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-74:hover {
+    background-color: #fff;
+}
+
+.button-74:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button-74 {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+
+.animacion2 {
+    width: 30%;
+
+}
