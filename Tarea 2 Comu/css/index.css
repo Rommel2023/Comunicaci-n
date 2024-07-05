@@ -1,0 +1,619 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* GENERALES */
+.deco1 {
+    font-weight: bold;
+    color: #FDB714;
+    font-size: 20px;
+}
+
+.tiulos {
+    color: #98002e;
+}
+
+.tiulos2 {
+    color: #FDB714;
+}
+
+
+.tama {
+    font-size: 16px;
+}
+
+
+.boton {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    background-color: #98002e;
+    height: 48px;
+}
+
+
+
+
+.boton:hover {
+    background-color: #FDB714;
+}
+
+
+.botonmat {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    background-color: #FDB714;
+    height: 48px;
+}
+
+
+
+
+.botonmat:hover {
+    background-color: #FDB714;
+}
+
+
+
+
+.boton:hover {
+    transition: all .1s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #000000;
+}
+
+
+/* HEADER */
+
+
+.logo {
+    width: 130px;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+
+
+.navbar-custom {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #98002e;
+}
+
+.navbar-custom .navbar-brand {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+
+
+
+/* seccion video */
+.video {
+    /*altura fija vertical*/
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: screen;
+    background-blend-mode: multiply;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+}
+
+
+/* seccion 1 */
+.col {
+    background-color: #fbfbfb;
+}
+
+.grow img {
+    transition: 1s ease;
+}
+
+.grow img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+
+.sec1 {
+
+
+    background-size: cover;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-position: center;
+
+    background-blend-mode: screen;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    /* padding-top: 0;
+    height: 610px; */
+}
+
+.card {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: all ease 0.2s;
+}
+
+.card:hover {
+    transition: all ease 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+/*  seccion 2  */
+
+.banner2 {
+    background-image: url("/imagenes/deco3.png");
+    background-size: cover;
+    background-color: #98002e;
+    background-position: center;
+
+    background-blend-mode: screen;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    padding-top: 0;
+}
+
+
+/* seccion 3 */
+
+.sec3 {
+    background-image: url("/imagenes/AdobeStock_443186131.jpeg");
+    background-size: cover;
+
+    background-position: center;
+
+    background-blend-mode: screen;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    /* padding-top: 0;
+    height: 610px; */
+}
+
+
+
+
+
+
+
+.sectionForm .containerForm {
+    width: 80%;
+    padding: 20px;
+}
+
+.sectionForm .containerForm .formRow {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.sectionForm .containerForm .formRow .colForm {
+    position: relative;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 30px 0px 10px;
+    transition: 0.5s;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #000;
+    font-weight: bold;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox input,
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea textarea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 0px 10px;
+    z-index: 1;
+    color: #000;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0px 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox input:focus+.text,
+.sectionForm .containerForm .formRow .colForm .inputBox input:valid+.text {
+    left: -10px;
+    top: -35px;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+    background-color: #bed9dd;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox input:focus~.line,
+.sectionForm .containerForm .formRow .colForm .inputBox input:valid~.line {
+    height: 100%;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0px;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea textarea {
+    height: 100px;
+    resize: none;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:focus+.text,
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:valid+.text {
+    left: -10px;
+    top: -35px;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:focus~.line,
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:valid~.line {
+    height: 100%;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background-color: #a87942;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.alertaRoja {
+    color: #ff0000;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.alertaVerde {
+    color: #2d572c;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+i {
+    color: white;
+    font-size: 100px;
+
+}
+
+/* seccion 4 */
+.projects-section {
+    padding: 10rem 0;
+}
+
+.projects-section .featured-text {
+    padding: 2rem;
+}
+
+.projects-section .featured-text {
+    padding: 2rem;
+}
+
+.projects-section .project-text {
+    padding: 3rem;
+    font-size: 90%;
+}
+
+@media (min-width: 992px) {
+    .projects-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #f5d87f;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .projects-section .project-text {
+        padding: 5rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .projects-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #FDB714;
+    }
+}
+
+
+.ult {
+    background-color: #dbdada;
+}
+
+/* seccion matricula */
+
+.fon {
+    background-image: url("/imagenes/campus.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Añadimos una capa blanca semitransparente */
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: screen;
+    /* Utilizamos screen para aclarar */
+    /* 
+    Nota: Solo necesitas un valor para background-blend-mode,
+    en este caso screen. La propiedad multiply no es necesaria.
+    */
+}
+
+
+
+
+.sectionForm .containerForm {
+    width: 80%;
+    padding: 20px;
+}
+
+.sectionForm .containerForm .formRow {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.sectionForm .containerForm .formRow .colForm {
+    position: relative;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 30px 0px 10px;
+    transition: 0.5s;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #000;
+    font-weight: bold;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox input,
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea textarea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 0px 10px;
+    z-index: 1;
+    color: #000;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0px 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox input:focus+.text,
+.sectionForm .containerForm .formRow .colForm .inputBox input:valid+.text {
+    left: -10px;
+    top: -35px;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+    background-color: #ffd433;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox input:focus~.line,
+.sectionForm .containerForm .formRow .colForm .inputBox input:valid~.line {
+    height: 100%;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0px;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea textarea {
+    height: 100px;
+    resize: none;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:focus+.text,
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:valid+.text {
+    left: -10px;
+    top: -35px;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:focus~.line,
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:valid~.line {
+    height: 100%;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background-color: #ffd433;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+/* footer */
+
+footer {
+    background-color: #98002e;
+    color: white;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+/************ Acordeon  ***************/
+
+.accordion-body {
+    background-color: #dbdada;
+}
+
+
+/*justificar textos*/
+
+.justificar {
+    text-align: justify;
+    text-indent: 0rem;
+    margin: 0;
+}
+
+
+/*cambiar color a las flechas finales de cada seccion*/
+
+.accordion-button:is(.collapsed)::after {
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+    box-shadow: none;
+    background-color: #fff;
+}
+
+
+/*estado actual*/
+
+.accordion-button {
+    color: #fff !important;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+
+/*La pseudo-clase :last-child de CSS representa el último elemento entre un grupo de elementos hermanos.*/
+
+.accordion-button:last-child {
+    background-color: #98002e;
+}
+
+
+/*estado sobre*/
+
+.accordion-button:hover {
+    color: #ffffff !important;
+    background-color: #ffff;
+    color: black !important;
+}
+
+
+/*estado activo*/
+
+.accordion-button:focus {
+    color: #ffff !important;
+    background-color: #FDB714;
+}
