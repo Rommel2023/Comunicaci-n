@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Suscripción - The Gang Wear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="icon" href="imagenes/favicon.png">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.0/dist/sweetalert2.min.css">
+</head>
+
+<body>
+    <header class="back text-center text-white">
+        <section class="orden">
+            <div class="container-fluid">
+                <h1 class="titulo display-4">The Gang Wear</h1>
+                <div class="container">
+                    <div class="tama">
+                        <p>Ingrese su correo electrónico y reciba hoy un 30% de descuento en su próxima visita.</p>
+                    </div>
+
+                    <form id="subscribeForm">
+                        <div class="mb-3">
+                            <label class="tama" for="email">Correo electrónico:</label>
+                            <input type="email" id="email" class="bordes form-control" name="email" required>
+                        </div>
+                        <div class="pt-3"></div>
+                        <button type="submit" class="boton">Suscribirse</button>
+                    </form>
+
+                    <div class="pt-3"></div>
+                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#myModal1">No
+                        gracias</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Estás seguro de que quieres perder esta oferta?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html">
+                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Sí</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+
+            if (email) {
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Gracias por suscribirte!',
+                    text: 'Recibirás un 30% de descuento en tu próxima visita.',
+                    confirmButtonText: '¡Genial!'
+                }).then(() => {
+                    window.location.href = 'index.html';
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Por favor, ingresa un correo electrónico válido.',
+                    confirmButtonText: 'Ok'
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

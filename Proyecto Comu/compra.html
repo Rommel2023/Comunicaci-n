@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>compra</title>
+    <link rel="stylesheet" href="css/compra.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="imagenes/favicon-32x32.png">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- carga de la libreria ANIMATE.CSS CDN -->
+    <script src="js/compra.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+</head>
+
+<body data-vide-bg="video/vid">
+
+    <header id="pruebaaaa" class="bg-dark text-white">
+        <div class="container py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <img class="img-fluid rounded-circle logo" src="imagenes/logoGW.jpg" alt="logo"
+                    style="max-width: 100px;">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ropa.html">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ofertas.html">Ofertas</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Destacado
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="acerca.html">The Gang Wear</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                    <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+                                    <!-- Puedes agregar más opciones si lo necesitas -->
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <div class="container-fluid banner">
+        <div class="pt-4"></div>
+        <div class="text-center">
+            <p class="text-white">¿Ya viste nuestras ofertas?</p>
+            <div class="pt-2"></div>
+            <button class="button-17" role="button">Ofertas</button>
+            <div class="pt-2"></div>
+        </div>
+    </div>
+
+
+
+
+    <section class="pt-5 pb-5 ">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Imagen del producto -->
+                <div class="col-lg-6 mb-4 mb-lg-0 wow animate__animated animate__bounceInRight">
+                    <div class="product-image">
+                        <img src="imagenes/tiendaCamisa1.jpg" class="img-fluid rounded shadow"
+                            alt="Camisa The Gang Wear">
+                    </div>
+                </div>
+
+                <!-- Detalles del producto -->
+                <div class="col-lg-6 wow animate__animated animate__bounceInLeft">
+                    <div class="bg-light p-4 rounded shadow">
+                        <h2 class="text-center text-dark mb-4">The Gang Wear</h2>
+                        <p class="text-dark">
+                            Cada prenda ha sido cuidadosamente revisada para asegurar que se encuentra en excelentes
+                            condiciones.
+                            El precio refleja su calidad y estado, ofreciéndote lo mejor en moda sostenible a un costo
+                            accesible.
+                            ¡Compra con confianza!
+                        </p>
+
+                        <!-- Nombre de la camisa, talla y precio -->
+                        <div class="product-details mb-4">
+                            <h3 class="text-dark">KAWS SKELETON NEW FICTION TEE ☠️</h3>
+                            <p class="text-dark"><strong>Talla:</strong> M</p>
+                            <p class="text-dark"><strong>Precio:</strong> ₡20.000</p>
+                        </div>
+
+                        <div id="payment-form-container" class="mt-4">
+                            <h3 class="text-dark">Formulario de Pago</h3>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-3" placeholder="Nombre en la tarjeta"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-3" placeholder="Número de tarjeta"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-3" placeholder="Fecha de expiración"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-3" placeholder="CVV" required>
+                                </div>
+
+                                <!-- Sección para seleccionar recogida o envío -->
+                                <div class="form-group">
+                                    <label for="deliveryMethod">Método de entrega:</label>
+                                    <select class="form-control mb-3" id="deliveryMethod" required
+                                        onchange="toggleDeliveryOptions()">
+                                        <option value="" disabled selected>Selecciona una opción</option>
+                                        <option value="pickup">Recoger en tienda</option>
+                                        <option value="delivery">Envío por correo</option>
+                                    </select>
+                                </div>
+
+                                <!-- Opciones adicionales para envío -->
+                                <div id="deliveryOptions" style="display: none;">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control mb-3" placeholder="Dirección de entrega"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control mb-3" placeholder="Ciudad" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control mb-3" placeholder="Código Postal"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <!-- Mensaje de confirmación -->
+                                <div id="confirmationMessage" class="alert alert-info" style="display: none;">
+                                    <!-- Este mensaje cambiará dependiendo de la opción seleccionada -->
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn btn-primary btn-block mt-3"
+                                        onclick="processOrder()">Comprar</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="container-fluid codigo text-center mt-4" id="qrContainer" style="display: none;">
+                            <img src="imagenes/qr.png" class="qr img-fluid" alt="Código QR">
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function toggleDeliveryOptions() {
+                        const deliveryMethod = document.getElementById('deliveryMethod').value;
+                        const deliveryOptions = document.getElementById('deliveryOptions');
+                        const confirmationMessage = document.getElementById('confirmationMessage');
+
+                        if (deliveryMethod === 'delivery') {
+                            deliveryOptions.style.display = 'block';
+                            confirmationMessage.innerHTML = 'Tu paquete será enviado y llegará en 3-5 días hábiles. Al escanear el código QR podrás hacer seguimiento de tu paquete.';
+                        } else {
+                            deliveryOptions.style.display = 'none';
+                            confirmationMessage.innerHTML = '¡Gracias por tu compra! Trae este código a nuestra tienda para que recojas el paquete.';
+                        }
+                    }
+
+                    function processOrder() {
+                        // Mostrar el QR
+                        mostrarQR();
+
+                        // Mostrar el mensaje de confirmación dependiendo de la opción seleccionada
+                        const confirmationMessage = document.getElementById('confirmationMessage');
+                        confirmationMessage.style.display = 'block';
+                    }
+
+                    function mostrarQR() {
+                        document.getElementById("qrContainer").style.display = "block";
+                    }
+                </script>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="fondoColor py-5 text-white">
+        <div class="container">
+            <h2 class="titulos text-center mb-5" tabindex="13">Otros clientes también vieron</h2>
+            <div class="galeriaFotos galeriaJack">
+                <div class="tz-gallery">
+                    <div class="row text-center">
+                        <!-- Producto 1 -->
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <a class="hover-img d-block position-relative overflow-hidden"
+                                href="imagenes/tiendaJack1.jpg">
+                                <img src="imagenes/tiendaJack1.jpg" class="img-fluid rounded shadow-sm"
+                                    alt="The North Face Gore-Tex Jacket">
+                            </a>
+                            <div class="mt-3">
+                                <h3 class="h5 text-white">THE NORTH FACE GORE-TEX JACKET ⛰️</h3>
+                            </div>
+                        </div>
+                        <!-- Producto 2 -->
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <a class="hover-img d-block position-relative overflow-hidden"
+                                href="imagenes/tiendaJack2.jpg">
+                                <img src="imagenes/tiendaJack2.jpg" class="img-fluid rounded shadow-sm"
+                                    alt="The North Face 1996 Printed Retro Nuptse Jacket">
+                            </a>
+                            <div class="mt-3">
+                                <h3 class="h5 text-white">The North Face 1996 Printed Retro Nuptse 700 Fill Packable
+                                    Jacket 🍒</h3>
+                            </div>
+                        </div>
+                        <!-- Producto 3 -->
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <a class="hover-img d-block position-relative overflow-hidden"
+                                href="imagenes/tiendaJack3.jpg">
+                                <img src="imagenes/tiendaJack3.jpg" class="img-fluid rounded shadow-sm"
+                                    alt="Nike Big Swoosh Jacket">
+
+                            </a>
+                            <div class="mt-3">
+                                <h3 class="h5 text-white">NIKE BIG SWOOSH JACKET 🖤</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-4">
+        <div class="container text-center">
+            <h2 class="section-heading mb-4">Síguenos en redes sociales</h2>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="https://www.instagram.com/" target="_blank" class="btn text-primary">
+                        <i class="uil uil-instagram-alt fa-2x"></i>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="https://es-la.facebook.com/" target="_blank" class="btn text-primary">
+                        <i class="uil uil-facebook fa-2x"></i>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="https://www.youtube.com/?app" target="_blank" class="btn text-primary">
+                        <i class="uil uil-youtube fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <h2 class="text-white">Derechos Reservados</h2>
+            <p class="text-center">Rommel 2024</p>
+
+
+        </div>
+    </footer>
+
+
+
+
+    <!-- carga de la interactividad del framework -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <!-- carga la librería JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+
+    <script src="js/jquery.vide.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+
+    <!-- programacion JS -->
+    <script src="js/menu.js"></script>
+
+</body>
